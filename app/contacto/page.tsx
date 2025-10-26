@@ -28,8 +28,7 @@ export default function ContactSection() {
   return (
     <section className="relative isolate min-h-screen py-12 md:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
-          {/* Main Contact Form */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">    
           <Card className="lg:col-span-2 border-green bg-white/95 backdrop-blur-sm shadow-lg transition-all hover:shadow-xl overflow-hidden rounded-md">
             <CardHeader className="space-y-1 pb-4">
               <CardTitle className="text-xl md:text-2xl font-semibold text-[#2c3e50]">Formulario de contacto</CardTitle>
@@ -52,7 +51,6 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  {/* Email Field */}
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-sm font-medium text-[#2c3e50]">
                       Email*
@@ -68,7 +66,6 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  {/* Company Field */}
                   <div className="space-y-2">
                     <Label htmlFor="company" className="text-sm font-medium text-[#2c3e50]">
                       Empresa
@@ -82,7 +79,6 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  {/* Interest Select */}
                   <div className="space-y-2 max-w-full overflow-hidden">
                     <Label htmlFor="interest" className="text-sm font-medium text-[#2c3e50]">
                       Seleccioná tu interés
