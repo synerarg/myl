@@ -4,7 +4,7 @@ import { Button } from "./Button"
 
 export const Footer = () => {
   return (
-    <footer className="bg-white border-t border-darkBlue">
+    <footer id="footer" className="bg-white border-t border-darkBlue ">
       <div className="mx-auto max-w-7xl px-6 py-4 ">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 py-4">

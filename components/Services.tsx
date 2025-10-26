@@ -11,18 +11,49 @@ type Service = {
 };
 
 const services: Service[] = [
-  { title: "Servicios Eléctricos", description: "Instalaciones, mantenimiento preventivo y correctivo, tableros eléctricos y puesta en marcha de equipos.", icon: "/icons/services/Lightning.png" },
-  { title: "Servicios Mecánicos", description: "Montaje, mantenimiento, reparaciones industriales y soporte técnico especializado.", icon: "/icons/services/Wrench.png" },
-  { title: "Limpiezas Industriales", description: "Limpieza de equipos industriales y aeroenfriadores para máxima eficiencia operativa.", icon: "/icons/services/SprayBottle.png" },
-  { title: "Obra Civil Menor", description: "Construcción de bases, fundaciones, galpones, tinglados y mejoras en infraestructura.", icon: "/icons/services/Hammer.png" },
-  { title: "Cateos", description: "Detección de fallas y evaluación estructural mediante cateos e inspecciones técnicas preventivas.", icon: "/icons/services/PipeWrench.png" },
-  { title: "Protección Catódica", description: "Inspección y verificación de protección catódica, medición de potenciales y cálculos e ingeniería.", icon: "/icons/services/Shield.png" },
+  {
+    title: "Servicios Eléctricos",
+    description:
+      "Instalaciones, mantenimiento preventivo y correctivo, tableros eléctricos y puesta en marcha de equipos.",
+    icon: "/icons/services/Lightning.png",
+  },
+  {
+    title: "Servicios Mecánicos",
+    description:
+      "Montaje, mantenimiento, reparaciones industriales y soporte técnico especializado.",
+    icon: "/icons/services/Wrench.png",
+  },
+  {
+    title: "Limpiezas Industriales",
+    description:
+      "Limpieza de equipos industriales y aeroenfriadores para máxima eficiencia operativa.",
+    icon: "/icons/services/SprayBottle.png",
+  },
+  {
+    title: "Obra Civil Menor",
+    description:
+      "Construcción de bases, fundaciones, galpones, tinglados y mejoras en infraestructura.",
+    icon: "/icons/services/Hammer.png",
+  },
+  {
+    title: "Cateos",
+    description:
+      "Detección de fallas y evaluación estructural mediante cateos e inspecciones técnicas preventivas.",
+    icon: "/icons/services/PipeWrench.png",
+  },
+  {
+    title: "Protección Catódica",
+    description:
+      "Inspección y verificación de protección catódica, medición de potenciales y cálculos e ingeniería.",
+    icon: "/icons/services/Shield.png",
+  },
 ];
 
 export default function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    align: "center",          // ⭐ centra el slide activo en mobile
+    align: "center",
+    containScroll: "trimSnaps",
     dragFree: false,
     skipSnaps: false,
   });
@@ -31,19 +62,21 @@ export default function Services() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section className="w-full bg-white py-14 sm:py-20 lg:py-24">
-      <div className="w-[%] lg:w-[95%] xl:w-[92%] 2xl:w-[85%] mx-auto px-0 sm:px-6 md:px-10 lg:px-12 xl:px-16">
-        <div className="w-full flex flex-col md:flex-row md:items-start md:justify-between items-center justify-center gap-4 sm:gap-8 mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center md:text-left">
+    <section className="w-full bg-white py-16 sm:py-20 lg:py-24">
+      <div className="w-[98%] lg:w-[95%] xl:w-[92%] 2xl:w-[85%] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
+      <div className="w-full flex flex-col md:flex-row md:items-start md:justify-between items-center justify-center gap-8 mb-12">
+          <h2 className="text-5xl font-bold text-gray-900">
             <span className="text-orange">Nuestros</span> servicios
           </h2>
-          <p className="text-base sm:text-lg xl:text-xl text-gray-700 max-w-md leading-relaxed mt-2 md:mt-3 text-center md:text-left">
+
+          <p className="text-gray-700 text-xl max-w-md leading-relaxed mt-3">
             Soluciones integrales para mantener tu operación funcionando con máxima eficiencia y seguridad
           </p>
         </div>
 
+        {/* VIEWPORT */}
         <div className="relative">
-          {/* Flechas en ≥ md (no molestan en mobile) */}
+          {/* Botones */}
           <button
             aria-label="Anterior"
             onClick={scrollPrev}
@@ -63,44 +96,33 @@ export default function Services() {
             </svg>
           </button>
 
-          {/* Máscara más sutil en mobile para no “cortar” la card centrada */}
-          <div className=" md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
             <div ref={emblaRef} className="overflow-hidden">
-              {/* Track sin gap: gutters con padding + márgenes negativos */}
-              <div className="flex -mx-4">
+              <div className="flex -mx-2 sm:-mx-2.5">
                 {services.map((s, i) => (
                   <div
                     key={s.title + i}
                     className="
                       min-w-0
-                      /* mobile: card grande y centrada, con pequeño peek */
-                      flex-[0_0_88%]
-                      xs:flex-[0_0_85%]
-                      sm:flex-[0_0_60%]
-                      md:flex-[0_0_45%]
-                      lg:flex-[0_0_33%]
-                      xl:flex-[0_0_28%]
-                      px-[-60px] md:px-4
-                      flex justify-center
-                      items-center
-                    "
+                      w-full
+                      flex-[0_0_88%] xs:flex-[0_0_75%] sm:flex-[0_0_55%] md:flex-[0_0_40%] lg:flex-[0_0_32%] xl:flex-[0_0_28%]
+                      md:px-8 px-4
+                      "
                   >
-                    <article className="h-full w-[80%] select-none rounded-xl border-2 border-orange bg-white px-4 py-4 sm:px-5 shadow-[0_1px_0_rgba(0,0,0,0.02)] hover:shadow-md transition">
-                      <div className="flex items-start gap-3">
+                    <article className="h-full w-full rounded-xl border-2 border-orange bg-white px-5 py-4 shadow-[0_1px_0_rgba(0,0,0,0.02)] hover:shadow-md transition select-none">
+                        <div className="flex items-start justify-center flex-col gap-3 ">
                         <Image
                           src={s.icon || "/placeholder.svg"}
                           alt={s.title}
                           width={28}
                           height={28}
-                          className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
+                          className="w-10 h-10 object-contain"
                         />
-                        <h3 className="text-[#111827] font-semibold leading-6 text-base sm:text-lg">
-                          {s.title}
-                        </h3>
-                      </div>
-                      <p className="mt-2 text-[13.5px] sm:text-sm leading-6 text-[#4b5563]">
+                        <h3 className="text-[#111827] font-semibold leading-6 text-xl">{s.title}</h3>
+                      <p className=" text-sm leading-6 text-[#4b5563]">
                         {s.description}
                       </p>
+                        </div>
                     </article>
                   </div>
                 ))}
