@@ -11,7 +11,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, Phone, Linkedin } from "lucide-react"
 import { useState } from "react"
 import ContactMethod from "@/components/ContactMethod"
-import { handleSubmit } from "@/actions/contact-action"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -21,35 +20,9 @@ export default function ContactSection() {
     interest: "",
     message: "",
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' })
 
   const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus({ type: null, message: '' })
-
-    try {
-      const formDataObj = new FormData()
-      formDataObj.append('name', formData.name)
-      formDataObj.append('email', formData.email)
-      formDataObj.append('company', formData.company)
-      formDataObj.append('interest', formData.interest)
-      formDataObj.append('message', formData.message)
-
-      const result = await handleSubmit(formDataObj)
-      
-      if (result.status === 200) {
-        setSubmitStatus({ type: 'success', message: result.message })
-        setFormData({ name: "", email: "", company: "", interest: "", message: "" })
-      } else {
-        setSubmitStatus({ type: 'error', message: result.message })
-      }
-    } catch (error) {
-      setSubmitStatus({ type: 'error', message: 'Error al enviar el formulario. Por favor intente nuevamente.' })
-    } finally {
-      setIsSubmitting(false)
-    }
+    
   }
 
   return (
@@ -63,15 +36,6 @@ export default function ContactSection() {
               <p className="text-sm text-[#4d5a5f]">Completá para recibir asesoramiento personalizado</p>
             </CardHeader>
             <CardContent>
-              {submitStatus.type && (
-                <div className={`mb-4 p-4 rounded-lg ${
-                  submitStatus.type === 'success' 
-                    ? 'bg-green-50 text-green-800 border border-green-200' 
-                    : 'bg-red-50 text-red-800 border border-red-200'
-                }`}>
-                  {submitStatus.message}
-                </div>
-              )}
               <form onSubmit={handleFormSubmit} className="space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div className="space-y-2">
@@ -157,7 +121,7 @@ export default function ContactSection() {
                 </div>
 
                 <Button
-                  text={isSubmitting ? 'Enviando...' : 'Enviar'}
+                  text={'Enviar'}
                   variant="primary"
                   type="submit"
                 />
