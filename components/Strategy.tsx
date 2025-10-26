@@ -4,10 +4,9 @@ export function Strategy() {
   return (
     <section id="strategy" className="bg-white relative overflow-hidden">
       <div className="relative flex">
-        {/* Left content - aligned with max-w-7xl like Hero and Navbar */}
         <div className="w-full lg:w-1/2 relative z-10">
-          <div className="pl-32 pr-5 py-16 md:py-24">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="pl-[10%] pr-5 py-16 md:py-24">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
               Tu aliado estratégico
               <br />
               en servicios industriales

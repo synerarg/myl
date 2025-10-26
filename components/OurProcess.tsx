@@ -29,15 +29,13 @@ export function OurProcess() {
   ]
 
   return (
-    <section id="our-process" className="bg-darkBlue py-16 md:py-24 min-h-screen">
+    <section id="our-process" className="bg-darkBlue py-16 md:py-24 min-h-screen scroll-mt-20 flex items-center justify-center" >
       <div className="mx-auto max-w-7xl px-6">
-        {/* Heading and subtitle */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Nuestro proceso</h2>
+          <h2 className="text-5xl font-bold text-white mb-4">Nuestro proceso</h2>
           <p className="text-white/90 text-lg">Un enfoque estructurado para garantizar resultados excepcionales</p>
         </div>
 
-        {/* Process steps */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">

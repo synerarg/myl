@@ -22,44 +22,42 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Navegación */}
           <div>
             <h3 className="mb-4 font-semibold text-blue">Navegación</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#inicio" className="text-sm text-gray hover:text-blue transition-colors">
+                <Link href="/#inicio" className="text-sm text-gray hover:text-blue transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#strategy" className="text-sm text-gray hover:text-blue transition-colors">
+                <Link href="/#strategy" className="text-sm text-gray hover:text-blue transition-colors">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="#sectors" className="text-sm text-gray hover:text-blue transition-colors">
+                <Link href="/#sectors" className="text-sm text-gray hover:text-blue transition-colors">
                   Sectores
                 </Link>
               </li>
-              <li>
-                <Link href="#differentiators" className="text-sm text-gray hover:text-blue transition-colors">
+              {/*<li>
+                <Link href="/#differentiators" className="text-sm text-gray hover:text-blue transition-colors">
                   Proyectos
                 </Link>
-              </li>
+              </li>*/}
               <li>
-                <Link href="#our-process" className="text-sm text-gray hover:text-blue transition-colors">
+                <Link href="/#our-process" className="text-sm text-gray hover:text-blue transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-sm text-gray hover:text-blue transition-colors">
+                <Link href="/#contact" className="text-sm text-gray hover:text-blue transition-colors">
                   Contacto
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contacto */}
           <div>
             <h3 className="mb-4 font-semibold text-blue">Contacto</h3>
             <ul className="space-y-3">
@@ -73,7 +71,7 @@ export const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray">
-                +54 9 11 1234-567
+                +54 9 294 413-6902
                 </span>
               </li>
               <li className="flex items-center gap-2 text-sm ">
@@ -124,14 +122,12 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* CTA */}
           <div>
             <h3 className="mb-4 font-semibold text-blue">Contanos tu proyecto</h3>
             <Button text="Contactar ahora" variant="primary" bgColor="var(--color-blue)" />
           </div>
         </div>
 
-        {/* Bottom Copyright */}
       </div>
         <div className=" py-4 text-center border-t border-darkBlue">
           <p className="text-sm text-gray">© 2025 MyL Servicios Industriales. Todos los derechos reservados.</p>
