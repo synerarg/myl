@@ -5,7 +5,7 @@ export function Strategy() {
     <section id="strategy" className="bg-white relative overflow-hidden">
       <div className="relative flex">
         <div className="w-full lg:w-1/2 relative z-10">
-          <div className="pl-[10%] pr-5 py-16 md:py-24">
+          <div className="2xl:pl-[40%] lg:pl-[10%] px-10 pr-5 py-16 md:py-24">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
               Tu aliado estratégico
               <br />

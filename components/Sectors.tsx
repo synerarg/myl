@@ -20,15 +20,15 @@ export function Sectors() {
   return (
     <section
       id="sectors"
-      className="bg-white py-16 md:py-24 min-h-screen flex items-center justify-center mx-auto max-w-7xl px-6 scroll-mt-20"
+      className="bg-white py-36 flex items-center justify-center mx-auto max-w-7xl px-6 scroll-mt-20 "
     >
-      <div className="w-full flex flex-col items-center justify-between">
-        <div className="w-full flex flex-col md:flex-row md:items-start md:justify-between items-center justify-center gap-8 mb-12">
-          <h2 className="text-5xl font-bold text-gray-900">
+      <div className="w-full flex flex-col items-center justify-center md:justify-between">
+        <div className="w-full flex flex-col md:flex-row  md:justify-between items-center justify-center gap-8 mb-12">
+          <h2 className="text-5xl font-bold text-gray-900 text-center md:text-left">
             <span className="text-blue">Sectores</span> que atendemos
           </h2>
 
-          <p className="text-gray-700 text-xl max-w-md leading-relaxed mt-3">
+          <p className="text-gray-700 text-xl max-w-md leading-relaxed mt-3 text-center md:text-left">
             Experiencia comprobada en múltiples industrias con soluciones adaptadas a cada sector
           </p>
         </div>

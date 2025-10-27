@@ -35,14 +35,14 @@ export function Differentiators() {
   ]
 
   return (
-    <section id="differentiators" className="bg-white py-16 md:py-24 min-h-screen flex items-center justify-center scroll-mt-20">
+    <section id="differentiators" className="bg-white py-36 flex items-center justify-center scroll-mt-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-12">
-          <h2 className="text-5xl font-bold text-gray-900">
+          <h2 className="text-5xl font-bold text-gray-900 text-center md:text-left">
             Lo que nos <span className="text-green">diferencia</span>
           </h2>
 
-          <p className="text-gray-700 text-xl max-w-md leading-relaxed">
+          <p className="text-gray-700 text-xl max-w-md leading-relaxed text-center md:text-left">
             Nuestro compromiso va más allá de la ejecución técnica
           </p>
         </div>
