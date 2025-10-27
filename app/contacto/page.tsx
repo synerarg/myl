@@ -133,9 +133,9 @@ export default function ContactSection() {
             </CardHeader>
             <CardContent className="space-y-3 rounded-md">
               <ContactMethod
-                href="mailto:info@mylservicios.com.ar"
+                href="mailto:pablo_fuentes@mylserviciosar.com"
                 icon={<Mail className="h-5 w-5 text-green" />}
-                label="info@mylservicios.com.ar"
+                label="pablo_fuentes@mylserviciosar.com"
               />
               <ContactMethod
                 href="https://wa.me/5492944136902"

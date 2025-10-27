@@ -84,7 +84,7 @@ export const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray">
-                info@mylservicios.com.ar
+                pablo_fuentes@mylserviciosar.com
                 </span>
               </li>
               <li className="flex items-center gap-2 text-sm ">
