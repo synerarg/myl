@@ -20,7 +20,7 @@ export function Sectors() {
   return (
     <section
       id="sectors"
-      className="bg-white py-12 md:py-36 flex items-center justify-center mx-auto max-w-7xl px-6 md:scroll-mt-20 "
+      className="bg-white py-12 md:py-36 flex items-center justify-center mx-auto max-w-7xl px-6 md:scroll-mt-20 scroll-mt-10"
     >
       <div className="w-full flex flex-col items-center justify-center md:justify-between">
         <div className="w-full flex flex-col md:flex-row  md:justify-between items-center justify-center gap-8 mb-12">
