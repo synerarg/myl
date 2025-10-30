@@ -116,7 +116,7 @@ export const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray">
-                Neuquen, Argentina
+                Neuquén, Argentina
                 </span>
               </li>
             </ul>
