@@ -5,7 +5,7 @@ import { Button } from "./Button"
 export function Hero() {
   return (
     <section className="relative h-[600px] w-full overflow-hidden min-h-screen scroll-mt-20">
-      <Image src="/images/Hero.avif" alt="Industrial services background" fill className="object-cover" priority />
+      <Image src="/images/Hero.png" alt="Industrial services background" fill className="object-cover" priority />
 
       <div className="absolute inset-0 bg-black/50" />
 
