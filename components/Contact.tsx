@@ -19,7 +19,7 @@ export function Contact() {
 
           <Link
             href="whatsapp://send?phone=5491133333333&text=Hola, me interesa tu servicio"
-            className="rounded-md border-2 border-green bg-transparent px-6 py-3 font-semibold text-green transition-colors hover:bg-green/10"
+            className="rounded-md border-2 p-[-2px] border-green bg-transparent px-6 py-3 font-semibold text-green transition-colors hover:bg-green/10"
           >
             Contactar ahora
           </Link>
