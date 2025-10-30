@@ -62,7 +62,7 @@ export default function Services() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section className="w-full bg-white py-36 max-w-7xl mx-auto">
+    <section id="services" className="w-full bg-white py-36 max-w-7xl mx-auto md:scroll-mt-20">
       <div className="w-[98%] lg:w-[95%] xl:w-[92%] 2xl:w-[85%] mx-auto px-4  ">
       <div className="w-full flex flex-col md:flex-row md:items-start md:justify-between items-center justify-center gap-8 mb-12">
           <h2 className="text-5xl font-bold text-gray-900">

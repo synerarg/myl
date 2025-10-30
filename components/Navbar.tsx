@@ -74,7 +74,7 @@ export function Navbar() {
         aria-hidden={!open}
       >
         <div
-          className={`absolute top-0 left-0 right-0 h-[40vh] bg-white/95 backdrop-blur-md transition-transform duration-200  border-b border-gray-200 shadow-lg ${
+          className={`absolute top-0 left-0 right-0 h-[60vh] bg-white/95 backdrop-blur-md transition-transform duration-200  border-b border-gray-200 shadow-lg ${
             open ? "translate-y-0" : "-translate-y-full"
           }`}
           role="dialog"

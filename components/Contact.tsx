@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-white py-36 flex items-center justify-center scroll-mt-20">
+    <section id="contact" className="bg-white py-36 flex items-center justify-center md:scroll-mt-20">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <h2 className="mb-4 text-5xl font-bold text-black">Contanos tu proyecto</h2>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray">
