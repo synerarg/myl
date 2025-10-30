@@ -124,7 +124,9 @@ export const Footer = () => {
 
           <div>
             <h3 className="mb-4 font-semibold text-blue">Contanos tu proyecto</h3>
-            <Button text="Contactar ahora" variant="primary" bgColor="var(--color-blue)" />
+            <Button text="Contactar ahora" variant="primary" bgColor="var(--color-blue)" onClick={() => {
+              window.location.href = "/contacto"
+            }} />
           </div>
         </div>
 

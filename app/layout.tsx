@@ -3,13 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import FloatingButton from "@/components/FloatingButton";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mylserviciosar.com"),
   title: {
-    default: "MYL Servicios Industriales | Seguridad, Eficiencia y Continuidad Operativa",
+    default: "MYL Servicios Industriales",
     template: "%s | MYL Servicios Industriales",
   },
   description:
@@ -77,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         {children}
+        <FloatingButton phoneNumber="5492944136902" />
         <Footer />
       </body>
     </html>
