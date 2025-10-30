@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./Button"
@@ -125,8 +126,8 @@ export const Footer = () => {
           <div>
             <h3 className="mb-4 font-semibold text-blue">Contanos tu proyecto</h3>
             <Button text="Contactar ahora" variant="primary" bgColor="var(--color-blue)" onClick={() => {
-              window.location.href = "/contacto"
-            }} />
+            window.location.href = "/contacto"
+          }} />
           </div>
         </div>
 
