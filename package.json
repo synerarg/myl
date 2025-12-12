@@ -18,7 +18,11 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.548.0",
+<<<<<<< HEAD
     "next": "16.0.10",
+=======
+    "next": "16.0.7",
+>>>>>>> db43977fe06e0c626c5ad5ca242385e708b802f6
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-hook-form": "^7.65.0",
